@@ -3,7 +3,6 @@ const boxs = document.querySelectorAll(".drag-box"),
   img = document.querySelector("#img-box");
 
 //   Loop through each boxes element
-
 boxs.forEach((box) => {
   // when a draggable element dragged over a box element
   box.addEventListener("dragover", (e) => {
