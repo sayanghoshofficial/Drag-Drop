@@ -1,38 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("");
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-#container{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    width: 420px;
-    justify-content: center;
+#container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  opacity: 0.9;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-box-reflect: below 0px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
-.drag-box{
-    position: relative;
-    overflow: hidden;
-    height: 160px;
-    width: 160px;
-    border-radius: 12px;
-    border: 2px double green;
+.drag-box {
+  position: relative;
+  overflow: hidden;
+  height: 40%;
+  width: 40%;
+  border-radius: 12px;
+  border: 2px double green;
 }
-#img-box{
-    height: 100%;
-    width: 100%;
-    background-image: url("https://github-production-user-asset-6210df.s3.amazonaws.com/99132893/237678312-b83ccf70-d55d-43c6-a4d8-782d6a556d2e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230511T115259Z&X-Amz-Expires=300&X-Amz-Signature=448898c6851b7dfd1c2234ed0e2b267fe56cc18d2c8263dad1d39b65e123dc79&X-Amz-SignedHeaders=host&actor_id=99132893&key_id=0&repo_id=639389052");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#img-box {
+  height: 100%;
+  width: 100%;
+  background-image: url("./image/draggable.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.hovered{
-    border: 2px dashed green !important;
+.hovered {
+  border: 2px dashed green !important;
 }
