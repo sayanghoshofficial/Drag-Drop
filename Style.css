@@ -1,6 +1,49 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("");
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    background-image: url("https://github-production-user-asset-6210df.s3.amazonaws.com/99132893/237675644-4170f04b-4a7c-4875-9089-144930d27c78.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230511T114257Z&X-Amz-Expires=300&X-Amz-Signature=a724e078d219fa1721edcf3337ae829f2822afea3a2f6a442a62b1c698a4acd3&X-Amz-SignedHeaders=host&actor_id=99132893&key_id=0&repo_id=639389052");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#cointainer{
+    background-color: rgb(0, 0, 0);
+    position:absolute;
+    z-index: -1;
+    opacity: 0.9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    height: 600px;
+}
+.drag-box{
+    width: 40%;
+    height: 40%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px double green;
+    opacity: 1;
+}
+#img-box{
+    cursor: pointer;
+    position: relative;
+    background-image: url("https://github-production-user-asset-6210df.s3.amazonaws.com/99132893/237678312-b83ccf70-d55d-43c6-a4d8-782d6a556d2e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230511%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230511T115259Z&X-Amz-Expires=300&X-Amz-Signature=448898c6851b7dfd1c2234ed0e2b267fe56cc18d2c8263dad1d39b65e123dc79&X-Amz-SignedHeaders=host&actor_id=99132893&key_id=0&repo_id=639389052");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
