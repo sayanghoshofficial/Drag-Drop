@@ -38,11 +38,19 @@ body {
 #img-box {
   height: 100%;
   width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
   background-image: url("./image/draggable.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .hovered {
-  border: 2px dashed green !important;
+  border: 2px dashed green;
+  background-image: url("./image/drag-and-drop.png");
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
